@@ -1,6 +1,6 @@
 {
-  "name": "lm-commons/repository-template",
-  "description": "Repository template",
+  "name": "lm-commons/lmc-api-auth-oauth2",
+  "description": "API Tools for Oauth 2 authentication of requests",
   "license": "BSD-3-Clause",
   "authors": [
     {
@@ -9,13 +9,13 @@
     }
   ],
   "require": {
-    "php": "~8.2.0 || ~8.3.0 || ~8.4.0"
+    "php": "~8.3.0 || ~8.4.0 || ~8.5.0"
   },
   "require-dev": {
     "laminas/laminas-coding-standard": "^3.1",
-    "phpunit/phpunit": "^11.5",
+    "phpunit/phpunit": "^12.5",
     "psalm/plugin-phpunit": "^0.19.5",
-    "vimeo/psalm": "^6.10"
+    "vimeo/psalm": "^6.14"
   },
   "autoload": {
 
@@ -28,7 +28,7 @@
       "dealerdirect/phpcodesniffer-composer-installer": true
     },
     "platform": {
-      "php": "8.2.99"
+      "php": "8.3.99"
     }
   },
   "scripts": {
