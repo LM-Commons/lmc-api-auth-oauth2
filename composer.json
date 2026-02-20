@@ -9,7 +9,9 @@
     }
   ],
   "require": {
-    "php": "~8.3.0 || ~8.4.0 || ~8.5.0"
+    "php": "~8.3.0 || ~8.4.0 || ~8.5.0",
+    "lm-commons/lmc-api-auth": "1.0.x-dev",
+    "mezzio/mezzio-authentication-oauth2": "^2.14"
   },
   "require-dev": {
     "laminas/laminas-coding-standard": "^3.1",
@@ -18,10 +20,19 @@
     "vimeo/psalm": "^6.14"
   },
   "autoload": {
-
+    "psr-4": {
+      "Lmc\\Api\\Auth\\Oauth2\\": "src/"
+    }
   },
   "autoload-dev": {
-
+    "psr-4": {
+      "LmcTest\\Api\\Auth\\Oauth2\\": "test/"
+    }
+  },
+  "extra": {
+    "laminas": {
+      "config-provider": "Lmc\\Api\\Auth\\Oauth2\\ConfigProvider"
+    }
   },
   "config": {
     "allow-plugins": {
@@ -42,5 +53,11 @@
     "cs-fix": "phpcbf",
     "test-coverage-html": "phpunit --coverage-html ./build/html",
     "static-analysis": "psalm --shepherd --stats"
-  }
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "c:/lm-commons/lmc-api-auth"
+    }
+  ]
 }

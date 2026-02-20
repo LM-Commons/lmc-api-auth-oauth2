@@ -1,6 +1,7 @@
-# Lmc API OAuth2 Authentication 
+# Lmc API OAuth2 Authentication
 
-This component provides middlewares to authenticate API requests using PHP League OAuth2.
+This component provides middlewares to authenticate API requests using PHP
+League OAuth2.
 
 ## Requirements
 
