@@ -57,7 +57,7 @@
   "repositories": [
     {
       "type": "git",
-      "url": "c:/lm-commons/lmc-api-auth"
+      "url": "https://github.com/lm-commons/lmc-api-auth.git"
     }
   ]
 }
