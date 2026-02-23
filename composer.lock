@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5e60f0aa93b8a28b3cc2b1db643ba3cf",
+    "content-hash": "5bd7559da9ec7f2e02b46d3b532fb953",
     "packages": [
         {
             "name": "defuse/php-encryption",
@@ -792,8 +792,8 @@
             "version": "1.0.x-dev",
             "source": {
                 "type": "git",
-                "url": "c:/lm-commons/lmc-api-auth",
-                "reference": "17756cbacd23664055f6ca4aba359f979c18446a"
+                "url": "https://github.com/lm-commons/lmc-api-auth.git",
+                "reference": "dcfaf2fda78c09319cf7da7510920a2d6e3965ba"
             },
             "require": {
                 "laminas/laminas-authentication": "^2.13",
@@ -809,9 +809,9 @@
                 "amphp/parallel": "^2.3.3",
                 "amphp/socket": "^2.3.1",
                 "laminas/laminas-coding-standard": "^3.1",
-                "phpunit/phpunit": "^12.5",
+                "phpunit/phpunit": "^12.5.14",
                 "psalm/plugin-phpunit": "^0.19.5",
-                "vimeo/psalm": "6.14.3"
+                "vimeo/psalm": "6.15.1"
             },
             "default-branch": true,
             "type": "library",
@@ -852,6 +852,9 @@
                 ],
                 "static-analysis": [
                     "psalm --shepherd --stats"
+                ],
+                "static-analysis-update-baseline": [
+                    "psalm --shepherd --stats --update-baseline"
                 ]
             },
             "license": [
@@ -864,7 +867,7 @@
                 }
             ],
             "description": "API tools to authenticate requests",
-            "time": "2026-02-20T20:31:07+00:00"
+            "time": "2026-02-23T17:32:05+00:00"
         },
         {
             "name": "mezzio/mezzio-authentication",
@@ -3140,16 +3143,16 @@
         },
         {
             "name": "netresearch/jsonmapper",
-            "version": "v5.0.0",
+            "version": "v5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cweiske/jsonmapper.git",
-                "reference": "8c64d8d444a5d764c641ebe97e0e3bc72b25bf6c"
+                "reference": "980674efdda65913492d29a8fd51c82270dd37bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cweiske/jsonmapper/zipball/8c64d8d444a5d764c641ebe97e0e3bc72b25bf6c",
-                "reference": "8c64d8d444a5d764c641ebe97e0e3bc72b25bf6c",
+                "url": "https://api.github.com/repos/cweiske/jsonmapper/zipball/980674efdda65913492d29a8fd51c82270dd37bb",
+                "reference": "980674efdda65913492d29a8fd51c82270dd37bb",
                 "shasum": ""
             },
             "require": {
@@ -3185,9 +3188,9 @@
             "support": {
                 "email": "cweiske@cweiske.de",
                 "issues": "https://github.com/cweiske/jsonmapper/issues",
-                "source": "https://github.com/cweiske/jsonmapper/tree/v5.0.0"
+                "source": "https://github.com/cweiske/jsonmapper/tree/v5.0.1"
             },
-            "time": "2024-09-08T10:20:00+00:00"
+            "time": "2026-02-22T16:28:03+00:00"
         },
         {
             "name": "nikic/php-parser",
